@@ -15,7 +15,7 @@ const ComicDisplay: React.FC<ComicDisplayProps> = ({ comicData }) => {
   return (
     <div className="comic-container">
       <p id="title">{comicData.safe_title}</p>
-      <Image id="image" src={comicData.img} alt={comicData.alt} fill={true}/>
+      <Image id="image" src={comicData.img} alt={comicData.alt} height={500} width={window.innerWidth}/>
       <p id="date">{formatDistanceToNow(comicDate, { addSuffix: true })}</p>
     </div>
   );
