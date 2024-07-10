@@ -1,21 +1,19 @@
-// components/Layout.tsx
 import React from "react";
 import Header from "./Header";
-import MainContent from "./MainContent";
-import BackgroundImage from "./BackgroundImage";
-import styles from "@styles/global.module.css";
+import Footer from "./Footer";
+import { PropsWithChildren } from "react";
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout = ({ children }: PropsWithChildren<{}>) => {
   return (
-    <div className={styles.container}>
+    <div className ="body">
+    <header>
       <Header />
-      <main>{children}</main>
-      <MainContent />
-      <BackgroundImage />
+      </header>
+    <main>{children}</main>
+    <footer>
+      <Footer />
+    </footer>
     </div>
   );
 };
