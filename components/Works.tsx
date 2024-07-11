@@ -14,7 +14,7 @@ const Works: React.FC = () => {
         <li>
           <figure className={styles.works__pictures}>
             <figcaption className={styles.caption}>study projects</figcaption>
-            <Image src="/img/фрейм 1.png" alt="study projects" height={300}
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/фрейм 1.png`} alt="study projects" height={300}
               width={300}/>
           </figure>
         </li>
@@ -23,7 +23,7 @@ const Works: React.FC = () => {
             <figcaption className={styles.caption}>
               2D game on python
             </figcaption>
-            <Image src="/img/2dgame.png" alt="2D game on python" height={300}
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/2dgame.png`} alt="2D game on python" height={300}
               width={300} />
           </figure>
         </li>
@@ -33,7 +33,7 @@ const Works: React.FC = () => {
               console calculator on pyhton
             </figcaption>
             <Image
-              src="/img/calc.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/calc.png`}
               alt="console calculator on pyhton"
               height={300}
               width={300}

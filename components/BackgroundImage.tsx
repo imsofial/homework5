@@ -16,7 +16,7 @@ const imageLoader = ({ src, width, quality }: ImageLoaderParams): string => {
 const BackgroundImage: React.FC = () => {
   return (
     <div className={styles.bgImg}>
-      <Image loader={imageLoader} src="/img/me.png" alt="Background" fill={true}/>
+      <Image loader={imageLoader} src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/me.png`} alt="Background" fill={true}/>
     </div>
   );
 };

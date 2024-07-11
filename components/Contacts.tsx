@@ -11,7 +11,7 @@ const Contacts: React.FC = () => (
       <li>
         <figure className={style.works__pictures}>
           <Link href="https://github.com/imsofial">
-            <Image src="/img/github.png" alt="GitHub" fill={true} />
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/github.png`} alt="GitHub" fill={true} />
           </Link>
         </figure>
       </li>
@@ -19,7 +19,7 @@ const Contacts: React.FC = () => (
         <figure className="works__pictures">
           <Link href="https://t.me/ssffffqq">
             <Image
-              src="/img/Telegram_alternative_logo.svg.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/Telegram_alternative_logo.svg.png`}
               alt="Telegram"
               height={100}
             />
@@ -29,7 +29,7 @@ const Contacts: React.FC = () => (
       <li>
         <figure className="works__pictures">
           <Link href="mailto:s.goryunova@innopolis.university">
-            <Image src="/img/email.png" alt="Email" fill={true} />
+            <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/email.png`} alt="Email" fill={true} />
           </Link>
         </figure>
       </li>

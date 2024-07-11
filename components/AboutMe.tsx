@@ -15,7 +15,7 @@ const AboutMe: React.FC = () => (
   <section className={styles.me}>
     <Image
       loader={imageLoader}
-      src="/img/photo_2024-06-08_17-06-14.jpg"
+      src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/photo_2024-06-08_17-06-14.png`}
       alt="Sofia Goryunova"
       className={styles.me__img}
     />
